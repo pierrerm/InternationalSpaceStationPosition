@@ -28,7 +28,7 @@ h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 40px;
   text-align: center;
-  color: rgba(240, 224, 128, 0.97);
+  color: rgba(224,220,215);
 }
 
 .padding3{
@@ -43,6 +43,7 @@ h2 {
   background: rgba(4, 16, 54, 0.37);
   padding-top: 7rem;
   padding-bottom: 5.5rem;
+  width: 80%;
 }
 .col1,
 .col2,
@@ -65,15 +66,20 @@ arrowimage {
   border-color: rgba(177, 240, 238, 0.94);
   background-color: rgba(177, 240, 238, 0.94);
   border-radius: 2rem;
-  width: 8rem;
+  width: 6rem;
   height: 3.7rem;
 }
 
-.inputcolor{
+.inputcolor {
   background-color: rgba(224,220,215);
   border-color: rgba(224,220,215);
 }
 
-input {
-  color: rgba(224,220,215);
+input[type="text"], textarea {
+  background-color: rgba(224,220,215);
+}
+
+.button-font{
+  font-family: "Bowlby One SC", cursive;
+  font-size: 1.8rem;
 }
