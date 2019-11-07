@@ -1,20 +1,33 @@
 /* CSS files add styling rules to your content */
 
-#header, #footer {
-  background: rgba(171,203,248,0.97);
+#header {
+  background: rgba(4, 16, 54, 0.97);
+  color: rgba(177, 240, 238, 0.94);
 }
 
-#header{
+#header {
   margin-bottom: 20px;
 }
 
 body {
   font-family: helvetica, arial, sans-serif;
-  background: rgba(177,240,238,0.94);
-  margin: 2em;
+  background: rgba(177, 240, 238, 0.94);
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  margin: auto; /* used to center horizontally and vertically */
+  font-family: "Bowlby One SC", cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  margin: auto; /* used to center horizontally and vertically */
+  font-family: 'Varela Round', sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+.center {
+  
 }
