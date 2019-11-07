@@ -10,8 +10,10 @@
 }
 
 body {
+  background-image: url("https://cdn.glitch.com/47a1a984-9b5d-4897-a4fc-99dda05d61d6%2Fcash-money-animated-gif-11.gif?v=1573096666231");
+  background-size:cover;
+  background-color: rgba(177, 240, 238, 0.94);
   font-family: helvetica, arial, sans-serif;
-  background: rgba(177, 240, 238, 0.94);
 }
 
 h1 {
@@ -28,6 +30,20 @@ h2 {
   text-align: center;
 }
 
-.center {
-  
+.container2 {
+    margin:  30px auto;
+    width: 1000px;
+}
+
+.container2 > div {
+    width: 33%;
+}
+.col1 {
+    float: left;
+}
+.col2 {
+    float: auto;
+}
+.col3 {
+    margin: right;
 }
