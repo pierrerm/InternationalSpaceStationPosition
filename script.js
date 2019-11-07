@@ -8,6 +8,7 @@
   }
 
   function convertFor(jsonObj) {
+    var rates = jsonObj.rates;
     var input = document.getElementById("amount");
     var amount = input.value;
     var select1 = document.getElementById("sel");
@@ -15,8 +16,8 @@
     var select2 = document.getElementById("sel2");
     var currency2 = select1.options[select2.selectedIndex].value;
     console.log(amount);
-    console.log(JSON.stringify(jsonObj));
-    console.log(jsonObj.currency2);
+    console.log(JSON.stringify(rates));
+    console.log(rates.currency2);
     document.getElementById("result").innerHTML =
       (amount * jsonObj.currency2) / jsonObj.currency1;
   }
