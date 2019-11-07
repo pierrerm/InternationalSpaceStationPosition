@@ -23,6 +23,9 @@ function doConvert(jsonObj) {
 function fetchConvertData() {
   var input = document.getElementById("amount");
   var amount = input.value;
-  if 
-  getConvertData();
+  if (amount.match(/^(\d+(\.\d{0,2})?|\.?\d{1,2})$/) != null){
+    getConvertData();
+  } else {
+    document.getElementById("convertedAmount").innerHTML = "Invalid Amount!";
+  }
 }

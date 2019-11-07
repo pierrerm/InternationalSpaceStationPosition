@@ -31,9 +31,14 @@ h2 {
   text-align: center;
 }
 
-.container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.padding1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.padding2 {
+  background: white;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 .col1,
 .col2,
