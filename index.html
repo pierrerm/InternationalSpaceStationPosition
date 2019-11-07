@@ -61,7 +61,7 @@
           <th></th>
         </tr>
         <tr>
-          <td><input placeholder="1" type="text" name="fname" /><br /></td>
+          <td><input id="input1" placeholder="1" type="text" name="fname" /><br /></td>
           <td>
             <select id="sel" required="true">
               <option value="AUD">AUD</option>
@@ -85,10 +85,15 @@
             </select>
           </td>
           <td>
-          <button text="Convert"/>
+          <button id="convert" type="button" onclick="convert();">
+            Convert
+            </button>
           </td>
         </tr>
       </table>
+      <div>
+        <h1 id="result"/>
+      </div>
     </div>
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
