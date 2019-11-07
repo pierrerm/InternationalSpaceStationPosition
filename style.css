@@ -1,7 +1,11 @@
 /* CSS files add styling rules to your content */
 
+#header, #footer {
+}
+
 body {
   font-family: helvetica, arial, sans-serif;
+  background: rgba(177,240,238,0.94);
   margin: 2em;
 }
 
