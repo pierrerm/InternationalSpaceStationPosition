@@ -1,7 +1,12 @@
 /* CSS files add styling rules to your content */
 
 #header, #footer {
-  background: url();
+  background: url(https://cdn.glitch.com/47a1a984-9b5d-4897-a4fc-99dda05d61d6%2Fgeom.png?v=1573093766010);
+  color: rgba(177,240,238,0.94);
+}
+
+#header{
+  margin-bottom: 20px;
 }
 
 body {
