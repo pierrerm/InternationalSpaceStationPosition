@@ -29,3 +29,12 @@ function fetchConvertData() {
     document.getElementById("convertedAmount").innerHTML = "Invalid Amount!";
   }
 }
+
+function switchCurrencies(){
+  var select1 = document.getElementById("sel");
+  var currency1 = select1.options[select1.selectedIndex].value;
+  var select2 = document.getElementById("sel2");
+  var currency2 = select1.options[select2.selectedIndex].value;
+  select1.value=currency2;
+  select2.value=currency1;
+}
