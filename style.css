@@ -28,7 +28,7 @@ h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 40px;
   text-align: center;
-  color: yellow;
+  color: rgba(240, 224, 128, 0.97);
 }
 
 .padding3{
@@ -39,9 +39,10 @@ h2 {
   padding-bottom: 1rem;
 }
 .padding2 {
-  background: rgba(4, 16, 54, 0.27);
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  border-radius: 1rem;
+  background: rgba(4, 16, 54, 0.37);
+  padding-top: 7rem;
+  padding-bottom: 5.5rem;
 }
 .col1,
 .col2,
@@ -57,4 +58,22 @@ arrowimage {
   background-image: url("https://cdn.glitch.com/47a1a984-9b5d-4897-a4fc-99dda05d61d6%2Fcash-money-animated-gif-11.gif?v=1573096666231");
   width="30%";
   background-color: rgba(177, 240, 238, 0.94);
+}
+
+.submitbutton {
+  color: rgba(4, 16, 54, 0.97);
+  border-color: rgba(177, 240, 238, 0.94);
+  background-color: rgba(177, 240, 238, 0.94);
+  border-radius: 2rem;
+  width: 8rem;
+  height: 3.7rem;
+}
+
+.inputcolor{
+  background-color: rgba(224,220,215);
+  border-color: rgba(224,220,215);
+}
+
+input {
+  color: rgba(224,220,215);
 }
