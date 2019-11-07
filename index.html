@@ -5,6 +5,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script type="text/javascript" src="/script.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
       rel="stylesheet"
@@ -61,7 +67,9 @@
           <th></th>
         </tr>
         <tr>
-          <td><input id="input1" placeholder="1" type="text" name="fname" /><br /></td>
+          <td>
+            <input id="amount" placeholder="1" type="text" name="fname" value="hello"/>
+          </td>
           <td>
             <select id="sel" required="true">
               <option value="AUD">AUD</option>
@@ -85,14 +93,15 @@
             </select>
           </td>
           <td>
-          <button id="convert" type="button" onclick="convert();">
-            Convert
+            <button id="convert" type="button" onclick="convert();">
+              Convert
             </button>
           </td>
         </tr>
       </table>
+
       <div>
-        <h1 id="result"/>
+        <h1 id="result" />
       </div>
     </div>
     <!-- include the Glitch button to show what the webpage is about and
