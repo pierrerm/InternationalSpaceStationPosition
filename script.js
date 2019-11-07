@@ -21,5 +21,8 @@ function doConvert(jsonObj) {
 }
 
 function fetchConvertData() {
+  var input = document.getElementById("amount");
+  var amount = input.value;
+  if 
   getConvertData();
 }

@@ -21,17 +21,19 @@ h1 {
   font-family: "Bowlby One SC", cursive;
   font-size: 50px;
   text-align: center;
+  color: yellow;
 }
 
 h2 {
   margin: auto; /* used to center horizontally and vertically */
   font-family: "Varela Round", sans-serif;
-  font-size: 25px;
+  font-size: 40px;
   text-align: center;
 }
 
 .container {
-  display: table;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .col1,
 .col2,
