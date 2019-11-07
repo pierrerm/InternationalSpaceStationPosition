@@ -1,23 +1,23 @@
 
   function convert() {
+
+    var jsonObj = $.getJSON(
+      "https://randomuser.me/api/?gender=male",
+      convertFor()
+    );
+  }
+
+  function convertFor(jsonObj) {
     var input = document.getElementById("amount");
     var amount = input.value;
     var select1 = document.getElementById("sel");
     var currency1 = select1.options[select1.selectedIndex].value;
     var select2 = document.getElementById("sel2");
     var currency2 = select1.options[select2.selectedIndex].value;
-
-    var info = $.getJSON(
-      "https://api.exchangerate-api.com/v4/latest/USD",
-      convertFor(amount, currency1, currency2)
-    );
-  }
-
-  function convertFor(info, amount, currency1, currency2) {
     console.log(amount);
-    console.log(info.currency1);
-    console.log(info.currency2);
+    console.log(JSON.stringify(jsonObj.results[0]));
+    console.log(jsonObj.currency2);
     document.getElementById("result").innerHTML =
-      (amount * info.currency2) / info.currency1;
+      (amount * jsonObj.currency2) / jsonObj.currency1;
   }
 
