@@ -55,12 +55,6 @@ h2 {
   margin-top: 15%;
 }
 
-arrowimage {
-  background-image: url("https://cdn.glitch.com/47a1a984-9b5d-4897-a4fc-99dda05d61d6%2Fcash-money-animated-gif-11.gif?v=1573096666231");
-  width="30%";
-  background-color: rgba(177, 240, 238, 0.94);
-}
-
 .submitbutton {
   color: rgba(4, 16, 54, 0.97);
   border-color: rgba(177, 240, 238, 0.94);
@@ -83,3 +77,11 @@ input[type="text"], textarea {
   font-family: "Bowlby One SC", cursive;
   font-size: 1.8rem;
 }
+
+.switchbutton {
+  background: url("https://cdn.glitch.com/47a1a984-9b5d-4897-a4fc-99dda05d61d6%2Farrows.png?v=1573148996865") no-repeat;
+  border-color: rgba(0, 0, 0, 0);
+  width: 4.5rem;
+  height: 3.7rem;
+}
+
