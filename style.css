@@ -13,8 +13,8 @@ body {
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
 }
 
 #MapButtonContainer {
@@ -37,6 +37,8 @@ h1 {
 }
 
 #header {
+  display: inline-block;
+  text-align: center;
   background-color: black;
   padding-top: 2rem;
   padding-bottom: 0.8rem;
