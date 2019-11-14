@@ -17,3 +17,11 @@ function updatePosition(jsonObj) {
 function findISS() {
   getISSData();
 }
+
+$(document).ready(function(){
+    $("iframe").load(function(){
+        $(this).contents().on("mousedown, mouseup, click", function(){
+            alert("Click detected inside iframe.");
+        });
+    });
+});
