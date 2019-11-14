@@ -1,40 +1,20 @@
-var btn1 = document.getElementById("btn1");
+var positionButton = document.getElementById("positionButton");
 
-function getConvertData() {
+function getPos() {
   var jsonObj = $.getJSON(
-    "https://api.exchangerate-api.com/v4/latest/USD",
-    doConvert
+    "http://api.open-notify.org/iss-now.json",
+    updatePosition
   );
 }
 
-function doConvert(jsonObj) {
-  var rates = jsonObj.rates;
-  var input = document.getElementById("amount");
-  var amount = input.value;
-  var select1 = document.getElementById("sel");
-  var currency1 = select1.options[select1.selectedIndex].value;
-  var select2 = document.getElementById("sel2");
-  var currency2 = select1.options[select2.selectedIndex].value;
-  var convertedAmount = ((amount * rates[currency2]) / rates[currency1]).toFixed(2);
-  document.getElementById("convertedAmount").innerHTML =
-    amount + " " + currency1 + " is equal to " + convertedAmount + " " + currency2;
+function updatePosition(jsonObj) {
+  var coordinates = jsonObj.iss_position;
+  var gmap_canvas = document.getElementById("gmap_canvas");
+  var latitude = coordinates.latitude;
+  var longitude = coordinates.longitude;
+  gmap_canvas.src = "";
 }
 
-function fetchConvertData() {
-  var input = document.getElementById("amount");
-  var amount = input.value;
-  if (amount.match(/^(\d+(\.\d{0,2})?|\.?\d{1,2})$/) != null){
-    getConvertData();
-  } else {
-    document.getElementById("convertedAmount").innerHTML = "Invalid Amount!";
-  }
-}
-
-function switchCurrencies(){
-  var select1 = document.getElementById("sel");
-  var currency1 = select1.options[select1.selectedIndex].value;
-  var select2 = document.getElementById("sel2");
-  var currency2 = select1.options[select2.selectedIndex].value;
-  select1.value=currency2;
-  select2.value=currency1;
+function findISS() {
+  getConvertData();
 }
