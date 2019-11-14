@@ -13,12 +13,12 @@ body {
 }
 
 h1 {
-  
   font-family: "Orbitron", sans-serif;
   color: white;
 }
 
 #MapButtonContainer {
+  padding-top: 5%;
   text-align: center;
 }
 
@@ -52,6 +52,6 @@ h1 {
   background-repeat: no-repeat;
 }
 
-#issLogo {
-  margin-right: 1.5%;
+#findIssBtn {
+  
 }
