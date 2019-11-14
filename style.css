@@ -1,6 +1,13 @@
 /* CSS files add styling rules to your content */
 
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  height: 100%;
+  margin: 0;
   background-color: black;
   font-family: helvetica, arial, sans-serif;
 }
@@ -31,12 +38,12 @@ h1 {
 
 #header {
   background-color: black;
-  margin-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 0.8rem;
 }
 
 #MainContainer {
-  width: 100%;
-  height: 60rem;
+  min-height: 100%;
   background-image: url("https://cdn.glitch.com/e8d1372a-0275-4dde-9d2d-46016981128e%2FmilkyWay.jpg?v=1573701149630");
   background-size: cover;
   background-position: center;
