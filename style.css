@@ -36,17 +36,25 @@ h1 {
 /*   min-height: 75rem; */
 }
 
+#fauxHeader {
+  z-index: 1;
+  background-color: rgb(16, 24, 50);
+  width: 98%;
+  text-align: center;
+}
+
 #header {
   z-index: 1;
   position: fixed;
-  top: 0;
-  
+  top: 0px;
+  left: 0px;
   width: 100%;
-  border: solid 5% #e7e7ea;
+/*   border: solid 3px #e7e7ea; */
   text-align: center;
-  background-color: rgb(16, 24, 50);
-  padding-top: 2rem;
-  padding-bottom: 0.8rem;
+  background-color: #e7e7ea;
+  padding-left: 1%;
+  padding-right: 1%;
+/*   padding-bottom: 0.8rem; */
 }
 
 #MainContainer {
