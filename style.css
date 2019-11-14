@@ -22,11 +22,6 @@ h1 {
   text-align: center;
 }
 
-#gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-}
-
 .mapouter {
   margin-left: auto;
   margin-right: auto;
@@ -48,10 +43,10 @@ h1 {
 
 #MainContainer {
   min-height: 100%;
-/*   background-image: url("https://cdn.glitch.com/e8d1372a-0275-4dde-9d2d-46016981128e%2FmilkyWay.jpg?v=1573701149630");
+  background-image: url("https://cdn.glitch.com/e8d1372a-0275-4dde-9d2d-46016981128e%2FblackSky.jpg?v=1573762756954");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 @mixin transition-all {
