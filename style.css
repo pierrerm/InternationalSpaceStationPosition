@@ -23,6 +23,13 @@ h1 {
   height:100%;
 }
 
+#glitchBtn {
+  z-index: 4;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
 #sideBar {
   background-image: url("https://cdn.glitch.com/e8d1372a-0275-4dde-9d2d-46016981128e%2FblackSky.jpg?v=1573762756954");
   width: 4%;
@@ -36,6 +43,7 @@ h1 {
 }
 
 #fauxHeader {
+  z-index: 1;
   background-color: rgb(16, 24, 50);
   width: 99%;
   text-align: center;
