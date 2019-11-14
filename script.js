@@ -11,7 +11,7 @@ function updatePosition(jsonObj) {
   var gmap_canvas = document.getElementById("gmap_canvas");
   var latitude = jsonObj.latitude;
   var longitude = jsonObj.longitude;
-  gmap_canvas.src = "https://maps.google.com/maps?q=" + latitude + "," + longitude + "&t=&z=3&ie=UTF8&iwloc=&output=embed";
+  gmap_canvas.src = "https://www.arcgis.com/home/webscene/viewer.html?viewpoint=cam:" + latitude + "," + longitude + ",20000000;0,0&ui=min";
 }
 
 function findISS() {
