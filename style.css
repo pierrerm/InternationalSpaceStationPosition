@@ -1,19 +1,11 @@
 /* CSS files add styling rules to your content */
-@import "compass/css3";
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 html {
-  font-family: "Inconsolata", monospace;
-  font-size: 1.13em;
-  font-weight: bold;
   height: 100%;
   margin: 0;
 }
 
 body {
-  font-family: "Inconsolata", monospace;
-  font-size: 1.13em;
-  font-weight: bold;
   height: 100%;
   margin: 0;
   background-color: black;
@@ -67,10 +59,6 @@ h1 {
 	transition: all 200ms ease-in-out;
 }
 
-$slate-color: rgb(16,24,50);
-$blue-color: #00bcdd;
-$pink-color: #ff00ff;
-
 .container {
   display: flex;
   align-content: center;
@@ -79,7 +67,10 @@ $pink-color: #ff00ff;
 }
 
 .btn {
-  color: $slate-color;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.13em;
+  font-weight: bold;
+  color: rgb(16,24,50);
   cursor: pointer;
   display: inline-block;
   letter-spacing: 0.075em;
@@ -88,17 +79,17 @@ $pink-color: #ff00ff;
   position: relative;
   align-self: center;
   text-transform: uppercase;
-  border: 3px $blue-color solid;
-  border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+  border: 3px #00bcdd solid;
+  border-image: linear-gradient(45deg, #00bcdd 0%, #ff00ff 100%);
   border-image-slice: 1 1 0 0;
   z-index: 1;
-  box-shadow: -0.5em .5em transparentize($slate-color,1);
+  box-shadow: -0.5em .5em transparentize(rgb(16,24,50),1);
   transform-origin: left bottom;
   @include transition-all;
   
   &:before,
   &:after {
-    border: 3px $blue-color solid;
+    border: 3px #00bcdd solid;
     content: '';
     display: block;
     position: absolute;
@@ -107,7 +98,7 @@ $pink-color: #ff00ff;
   
   // SIDE
   &:before {
-    border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color,10%) 100%);
+    border-image: linear-gradient(45deg, #00bcdd 0%, adjust-hue(#00bcdd,10%) 100%);
     border-image-slice: 1 1 0 1;
     left: -0.59em; top: .15em;
     width: .31em;
@@ -117,7 +108,7 @@ $pink-color: #ff00ff;
   
   // BOTTOM
   &:after {
-    border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+    border-image: linear-gradient(45deg, #00bcdd 0%, #ff00ff 100%);
     border-image-slice: 1 1 1 0;
     bottom: -0.61em; right: 0.16em;
     width: 100%;
@@ -131,18 +122,18 @@ $pink-color: #ff00ff;
     background-color: white;
     background-size: 90%;
     transform: translate(0.5em,-0.5em);
-    box-shadow: -1em 1em .15em transparentize($slate-color,.9);
-    // box-shadow: -1em 1em 1em transparentize($blue-color,.9), -1em 1.9em 1.9em transparentize($slate-color,.9), 0em .38em .38em transparentize($slate-color,.9), 0em .76em .76em transparentize($slate-color,.9), 0em 1.52em 1.52em transparentize($slate-color,.9);
+    box-shadow: -1em 1em .15em transparentize(rgb(16,24,50),.9);
+    // box-shadow: -1em 1em 1em transparentize(#00bcdd,.9), -1em 1.9em 1.9em transparentize(rgb(16,24,50),.9), 0em .38em .38em transparentize(rgb(16,24,50),.9), 0em .76em .76em transparentize(rgb(16,24,50),.9), 0em 1.52em 1.52em transparentize(rgb(16,24,50),.9);
     
     
     &:before {
-      @include background-image(linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color,10%) 100%));
+      @include background-image(linear-gradient(45deg, #00bcdd 0%, adjust-hue(#00bcdd,10%) 100%));
       height: calc(100% - .13em);
       border-image-slice: 1;
     }
     
     &:after {
-      @include background-image(linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
+      @include background-image(linear-gradient(45deg, #00bcdd 0%, #ff00ff 100%));
       width: calc(100% - .13em);
       border-image-slice: 1;
     }
@@ -150,31 +141,31 @@ $pink-color: #ff00ff;
 }
 
 .cta {
-  background-color: $blue-color; // Old browsers
-  @include background-image(linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
-  border-image: linear-gradient(45deg, lighten($blue-color,20%) 0%, lighten($pink-color,20%) 100%);
+  background-color: #00bcdd; // Old browsers
+  @include background-image(linear-gradient(45deg, #00bcdd 0%, #ff00ff 100%));
+  border-image: linear-gradient(45deg, lighten(#00bcdd,20%) 0%, lighten(#ff00ff,20%) 100%);
   border-image-slice: 1;
   color: white;
   
   &:before {
     border-image-slice: 1;
-    @include background-image(linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color,10%) 100%));
+    @include background-image(linear-gradient(45deg, #00bcdd 0%, adjust-hue(#00bcdd,10%) 100%));
     left: -0.75em;
     top: .15em;
   }
   
   &:after {
     border-image-slice: 1;
-    @include background-image(linear-gradient(45deg, $blue-color 0%, $pink-color 100%));
+    @include background-image(linear-gradient(45deg, #00bcdd 0%, #ff00ff 100%));
     bottom: -0.75em;
     right: .15em;
   }
   
   &:hover {
     background: white;
-    border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
+    border-image: linear-gradient(45deg, #00bcdd 0%, #ff00ff 100%);
     border-image-slice: 1;
-    color: $slate-color;
+    color: rgb(16,24,50);
     
     &:before {
       height: 100%;
@@ -187,13 +178,13 @@ $pink-color: #ff00ff;
 
 .bg {
   background: none;
-  border: 3px solid $slate-color;
-  color: $slate-color;
+  border: 3px solid rgb(16,24,50);
+  color: rgb(16,24,50);
   
   &:before,
   &:after {
-    background: $slate-color;
-    border: 3px solid $slate-color;
+    background: rgb(16,24,50);
+    border: 3px solid rgb(16,24,50);
   }
   
   &:hover {
@@ -201,7 +192,7 @@ $pink-color: #ff00ff;
     
     &:before,
     &:after {
-      background: $slate-color;
+      background: rgb(16,24,50);
     }
   }
 }
