@@ -24,13 +24,16 @@ h1 {
 }
 
 #issPicture {
-  padding: 20%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  padding-left: 80%;
+  padding-right: 80%;
 }
 
 #glitchBtn {
-  z-index: 4;
+  z-index: 3;
   position: fixed;
-  bottom: 2%;
+  top: 15%;
   right: 2%;
 }
 
@@ -84,6 +87,7 @@ h1 {
 }
 
 #ButtonDiv {
+  z-index: 2;
   width: 10%;
   position: fixed;
   top: 85%;
