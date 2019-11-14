@@ -1,20 +1,19 @@
 var positionButton = document.getElementById("positionButton");
 
-function getPos() {
+function getISSData() {
   var jsonObj = $.getJSON(
-    "http://api.open-notify.org/iss-now.json",
+    "https://api.wheretheiss.at/v1/satellites/25544",
     updatePosition
   );
 }
 
 function updatePosition(jsonObj) {
-  var coordinates = jsonObj.iss_position;
   var gmap_canvas = document.getElementById("gmap_canvas");
-  var latitude = coordinates.latitude;
-  var longitude = coordinates.longitude;
-  gmap_canvas.src = "";
+  var latitude = jsonObj.latitude;
+  var longitude = jsonObj.longitude;
+  gmap_canvas.src = "https://maps.google.com/maps?q=" + latitude + "," + longitude + "t=&z=13&ie=UTF8&iwloc=&output=embed";
 }
 
 function findISS() {
-  getConvertData();
+  getISSData();
 }
