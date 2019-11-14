@@ -33,7 +33,7 @@ h1 {
 }
 
 .frameSize {
-  border: solid 3px #e7e7ea;
+/*   border: solid 3px #e7e7ea; */
   width: 60%;
   height: 50rem;
 }
@@ -48,10 +48,10 @@ h1 {
 
 #MainContainer {
   min-height: 100%;
-  background-image: url("https://cdn.glitch.com/e8d1372a-0275-4dde-9d2d-46016981128e%2FmilkyWay.jpg?v=1573701149630");
+/*   background-image: url("https://cdn.glitch.com/e8d1372a-0275-4dde-9d2d-46016981128e%2FmilkyWay.jpg?v=1573701149630");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 @mixin transition-all {
