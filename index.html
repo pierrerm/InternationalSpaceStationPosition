@@ -27,36 +27,36 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    
     <div id="header">
       <div id="fauxHeader">
         <h1 id="title">International Space Station Position</h1>
       </div>
     </div>
-    
+
     <div id="MainContainer">
       <iframe
         class="frameSize"
         onmousedown="alertWindow"
         id="gmap_canvas"
-        src="https://www.arcgis.com/home/webscene/viewer.html?viewpoint=cam:0,0,30000000;0,0&ui=min&zoom=false"
+        src="https://www.arcgis.com/home/webscene/viewer.html?viewpoint=cam:0,0,35000000;0,0&ui=min&zoom=false"
         frameborder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"
       ></iframe>
-      <!--         </div>
-      </div>
-      -->
+    </div>
+
+    <div id="ButtonDiv">
+      <a id="positionButton" class="push_button" onclick="findISS()"
+        >FIND THE ISS!</a
+      >
     </div>
     
-    <div id="ButtonDiv">
-        <a id="positionButton" class="push_button" onclick="findISS()"
-          >FIND THE ISS!</a
-        >
-      </div>
+    <div id="sideBar" style="position:fixed;top:0px;left:0px;z-index:0;"/>
     
-    <div class="" style="position:fixed;top:25px;left:30px;z-index:2;">
+    <div id="footer" style="position:fixed;bottom:0px;left:0px;z-index:1;"/>
+
+    <div class="" style="position:fixed;top:25px;left:30px;z-index:3;">
       <img
         id="issLogo"
         src="https://cdn.glitch.com/e8d1372a-0275-4dde-9d2d-46016981128e%2FissLogo.png?v=1573702896092"
@@ -74,7 +74,7 @@
           to make it easier for folks to view source and remix -->
     <div
       class="glitchButton"
-      style="position:fixed;top:35px;right:30px;z-index:2;"
+      style="position:fixed;top:5%;right:5%;z-index:3;"
     ></div>
     <script src="https://button.glitch.me/button.js"></script>
   </body>
