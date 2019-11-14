@@ -23,6 +23,10 @@ h1 {
   height:100%;
 }
 
+#issPicture {
+  padding: 20%;
+}
+
 #glitchBtn {
   z-index: 4;
   position: fixed;
