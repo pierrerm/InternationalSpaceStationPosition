@@ -33,6 +33,7 @@ h1 {
 }
 
 .frameSize {
+  border: solid 3px #e7e7ea;
   width: 60%;
   height: 50rem;
 }
@@ -81,7 +82,7 @@ h1 {
   display: block;
   text-decoration: none;
   margin: 0 auto;
-  border: solid 1px #e7e7ea;
+  border: solid 2px #e7e7ea;
   background: rgb(16, 24, 50);
   text-align: center;
   padding: 20px 30px;
